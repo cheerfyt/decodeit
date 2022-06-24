@@ -1,6 +1,8 @@
 decodeit
 ========
 
+__Decode eth & eth like raw transaction, compatible with multiple EIP standards__
+
 ![decodeit](https://github.com/cheerfyt/decodeit/blob/main/decodeit.gif?raw=true)
 
 use
