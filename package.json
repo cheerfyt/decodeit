@@ -1,0 +1,20 @@
+{
+  "name": "decodeit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'pnpm run start:*' -p {time}",
+    "start:web": "pnpm run dev --filter=web",
+    "start:sev": "go run main.go",
+    "build": "pnpm build:web && pnpm build:sev",
+    "build:web": "pnpm run build --filter=web",
+    "build:sev": "go build -o bin/decodeit -ldflags '-s -w' main.go"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
